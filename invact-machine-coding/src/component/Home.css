@@ -1,0 +1,29 @@
+.home-container {
+  display: flex;
+}
+
+.participants-card-container {
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(auto, 100px);
+}
+
+.toggleButton {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .toggleButton {
+    display: block;
+  }
+
+  .participants-list-container {
+    display: none;
+  }
+
+  .participants-list-container-active {
+    display: block;
+  }
+}
